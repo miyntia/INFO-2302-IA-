@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM1 Donation</title>
+    <link rel="stylesheet" href="donation.css">
+    <script src="donation.js" defer></script>
+</head>
+
+<body>
+
+    <section class="donation-info">
+        <header class="maintitle">
+            <h1>RM1</h1>
+            <h6>Campaign</h6>
+        </header>
+        <h3 class="minititle">Let your contributions be perpetual for the pleasure of Allah swt</h3>
+    </section>
+
+    <img id='bigpic' src="300ppi/Asset 1.png" alt="Illustration for the campaign">
+
+    <p class="quran">
+        “The example of those who spend their wealth in the way of Allah is like a seed [of grain] which grows seven
+        spikes; in each spike is a hundred grains. And Allah multiplies [His reward] for whom He wills. And Allah is
+        all-Encompassing and Knowing.”<br>Al Baqarah:261
+    </p>
+
+    <article class="donation-form">
+        <h2 class="maintitle">Donate Now</h2>
+
+        <!-- Form Start -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="staffid">Staff No</label>
+            <input type="number" id="staffid" name="staffid" required>
+        </div>
+        <div>
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="Select Department">Select Department</option>
+                <optgroup label="Kulliyyah of Islamic Revealed Knowledge and Human Sciences (KISAH)">
+                    <option value="Arabic Language and Literature Department">Arabic Language and Literature
+                        Department
+                    </option>
+                </optgroup>
+                <optgroup label="Kulliyyah of Business and Economics (KBE)">
+                    <option value="Accounting Department">Accounting Department</option>
+                </optgroup>
+                <optgroup label="Kulliyyah of Law (KOL)">
+                    <option value="International Islamic University Malaysia Centre for Human Rights (KLIM-CHR)">
+                        International Islamic University Malaysia Centre for Human Rights (KLIM-CHR)</option>
+                    <option value="Centre for Islamic Studies in Law (CISIL)">Centre for Islamic Studies in Law
+                        (CISIL)
+                    </option>
+                </optgroup>
+                <optgroup label="Kulliyyah of Education (KOED)">
+                    <option value="Department of Educational Technology and Multimedia">Department of Educational
+                        Technology and Multimedia</option>
+                    <option value="Centre for Educational Research and Innovation (CERI)">Centre for Educational
+                        Research and Innovation (CERI)</option>
+                </optgroup>
+                <optgroup label="Kulliyyah of Communication and Media Studies (KOMAS)">
+                    <option value="School of Communication Studies">School of Communication Studies</option>
+                    <option value="Centre for Media Studies and Research (CMSR)">Centre for Media Studies and
+                        Research
+                        (CMSR)</option>
+                </optgroup>
+                <optgroup label="Kulliyyah of Science (KOS)">
+                    <option value="Department of Mathematics">Department of Mathematics</option>
+                    <option value="Kulliyyah of Science Health, Safety and Environment (KOSHSEC)">Kulliyyah of
+                        Science
+                        Health, Safety and Environment (KOSHSEC)</option>
+                </optgroup>
+                <optgroup label="Kulliyyah of Engineering (KOE)">
+                    <option value="Department of Civil Engineering">Department of Civil Engineering</option>
+                    <option value="Institute of Sustainable Energy (ISE)">Institute of Sustainable Energy (ISE)
+                    </option>
+                </optgroup>
+                <optgroup label="Kulliyyah of ICT (KICT)">
+                    <option value="Department of Computer Science">Department of Computer Science</option>
+                    <option value="Centre for CyberSecurity Research and Development (CCSRD)">Centre for
+                        CyberSecurity
+                        Research and Development (CCSRD)</option>
+                </optgroup>
+                <optgroup label="Kulliyyah of Languages and Linguistics (KLL)">
+                    <option value="Department of Malay Language and Linguistics">Department of Malay Language and
+                        Linguistics</option>
+                    <option value="Centre for Advanced Studies in Languages and Linguistics (CASLL)">Centre for
+                        Advanced
+                        Studies in Languages and Linguistics (CASLL)</option>
+                </optgroup>
+                <optgroup label="Independent Centers">
+                    <option value="Centre for Islamic Thought and Civilization (CITC)">Centre for Islamic Thought
+                        and
+                        Civilization (CITC)</option>
+                </optgroup>
+                <optgroup label="Administrative Offices">
+                    <option value="Office of the President">Office of the President</option>
+                    <option value="Office of the Rector">Office of the Rector</option>
+                    <option value="Office of the Deputy Rector (Academic and Internationalisation)">Office of the
+                        Deputy
+                        Rector (Academic and Internationalisation)</option>
+                    <option value="Office of the Deputy Rector (Responsible Research and Innovation)">Office of the
+                        Deputy Rector (Responsible Research and Innovation)</option>
+                    <option value="Office of the Deputy Rector (Student Development and Community Engagement)">
+                        Office of
+                        the Deputy Rector (Student Development and Community Engagement)</option>
+                    <option value="Office of the Deputy Rector (Internationalisation and Global Networks)">Office of
+                        the
+                        Deputy Rector (Internationalisation and Global Networks)</option>
+                    <option value="Office of the Chief Digital/Information Officer">Office of the Chief
+                        Digital/Information Officer</option>
+                    <option value="IIUM Press">IIUM Press</option>
+                    <option value="Office of Promotion and Marketing">Office of Promotion and Marketing</option>
+                    <option value="Centre for Communication, Advocacy and Promotion for Change">Centre for
+                        Communication, Advocacy and Promotion for Change</option>
+                    <option value="Office of the Ombudsman">Office of the Ombudsman</option>
+                    <option value="Risk Management Office">Risk Management Office</option>
+                    <option value="University Library">University Library</option>
+                    <option value="Sultan Ahmad Shah Medical Centre @ IIUM">Sultan Ahmad Shah Medical Centre @ IIUM
+                    </option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="contactno">Contact No</label>
+            <input type="tel" id="contactno" name="contactno" required>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="amountdeduct">Amount to be Deducted RM</label>
+            <input type="number" id="amountdeduct" name="amountdeduct" required>
+        </div>
+        <div>
+            <label for="start">Start date:</label>
+            <input type="date" id="start" name="start" required>
+            <label for="end">End date:</label>
+            <input type="date" id="end" name="end" required>
+        </div>
+        <!-- Submit button -->
+        <div id="overlay" onclick="off()">
+            <div id="success"></div>
+        </div>
+        <button style="margin-bottom: 100px;" type="submit" onclick="submitForm()">Submit</button>
+        <!-- Form End -->
+
+    </article>
+
+    <footer>
+        <img id="logo" src="300ppi/logouia.png" alt="">
+        <h4 style="font-size: 20px; color: #e3f1ea; font-family: 'BigNoodleTitling';" >
+            IIUM ENDOWMENT FUND
+            <br>Level 3, Rectory
+            <br>International Islamic University Malaysia
+            <br>P.O. Box 10
+            <br>50728 KualaLumpur
+            <br>Tel: 03 6196 4268
+            <br>Email: ief@iium.edu.my
+            <br>Website: www.iium.edu.my/ief
+            <br>Facebook: www.facebook.com/ief.official/
+        </h4>
+    </footer>
+</body>
+
+</html>
